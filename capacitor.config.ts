@@ -7,6 +7,7 @@ const config: CapacitorConfig = {
   server: {
     url: 'https://i.xokvip.net',
     cleartext: true,
+    allowNavigation: ['*.xokvip.net', 'i.xokvip.net'],
   },
   android: {
     allowMixedContent: true,
