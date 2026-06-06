@@ -13,8 +13,9 @@ const config: CapacitorConfig = {
     allowMixedContent: true,
   },
   ios: {
-    contentInset: 'always',
+    contentInset: 'never',
     allowsLinkPreview: false,
+    scrollEnabled: false,
   },
 };
 
