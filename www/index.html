@@ -16,10 +16,17 @@
     <h2>XokVIP</h2>
     <p>Loading...</p>
   </div>
-  <script>
+  <script type="module">
+    import { StatusBar, Style } from '@capacitor/status-bar';
+
+    try {
+      await StatusBar.setOverlaysWebView({ overlay: true });
+      await StatusBar.hide();
+    } catch(e) {}
+
     setTimeout(function() {
       window.location.href = 'https://i.xokvip.net';
-    }, 500);
+    }, 300);
   </script>
 </body>
 </html>
